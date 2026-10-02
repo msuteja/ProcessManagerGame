@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="9" tilewidth="120" tileheight="120" infinite="0" nextlayerid="3" nextobjectid="29">
+ <editorsettings>
+  <export target="map.tmj" format="json"/>
+ </editorsettings>
+ <tileset firstgid="1" source="normal floor.tsx"/>
+ <tileset firstgid="2" source="spawn_tile.tsx"/>
+ <tileset firstgid="3" source="rubbishbin_closed.tsx"/>
+ <tileset firstgid="4" source="pot_empty.tsx"/>
+ <tileset firstgid="5" source="basket.tsx"/>
+ <layer id="1" name="Floor" width="20" height="9" locked="1">
+  <data encoding="csv">
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+</data>
+ </layer>
+ <objectgroup id="2" name="Interactables">
+  <object id="1" name="rubbishbin" gid="3" x="1320" y="480" width="120" height="120">
+   <properties>
+    <property name="closed" type="bool" value="true"/>
+    <property name="closed_sprite" value="rubbishbin_closed.png"/>
+    <property name="open_sprite" value="rubbishbin_open.png"/>
+    <property name="type" value="rubbishbin"/>
+   </properties>
+  </object>
+  <object id="11" name="pot2" gid="4" x="840" y="960" width="120" height="120">
+   <properties>
+    <property name="cooking_sprite" value="pot_cooking.png"/>
+    <property name="done_sprite" value="pot_done.png"/>
+    <property name="empty_sprite" value="pot_empty.png"/>
+    <property name="state" value="empty"/>
+    <property name="type" value="pot"/>
+   </properties>
+  </object>
+  <object id="6" name="pot1" gid="4" x="840" y="600" width="120" height="120">
+   <properties>
+    <property name="cooking_sprite" value="pot_cooking.png"/>
+    <property name="done_sprite" value="pot_done.png"/>
+    <property name="empty_sprite" value="pot_empty.png"/>
+    <property name="state" value="empty"/>
+    <property name="type" value="pot"/>
+   </properties>
+  </object>
+  <object id="19" name="basket3" gid="5" x="1560" y="960" width="120" height="120">
+   <properties>
+    <property name="basket_cabbage_sprite" value="basket_cabbage.png"/>
+    <property name="basket_carrot_sprite" value="basket_carrot.png"/>
+    <property name="basket_onion_sprite" value="basket_onion.png"/>
+    <property name="basket_potato_sprite" value="basket_potato.png"/>
+    <property name="basket_tomato_sprite" value="basket_tomato.png"/>
+    <property name="contents" value="empty"/>
+    <property name="type" value="basket"/>
+   </properties>
+  </object>
+  <object id="15" name="basket2" gid="5" x="1560" y="840" width="120" height="120">
+   <properties>
+    <property name="basket_cabbage_sprite" value="basket_cabbage.png"/>
+    <property name="basket_carrot_sprite" value="basket_carrot.png"/>
+    <property name="basket_onion_sprite" value="basket_onion.png"/>
+    <property name="basket_potato_sprite" value="basket_potato.png"/>
+    <property name="basket_tomato_sprite" value="basket_tomato.png"/>
+    <property name="contents" value="empty"/>
+    <property name="type" value="basket"/>
+   </properties>
+  </object>
+  <object id="20" name="basket1" gid="5" x="1560" y="720" width="120" height="120">
+   <properties>
+    <property name="basket_cabbage_sprite" value="basket_cabbage.png"/>
+    <property name="basket_carrot_sprite" value="basket_carrot.png"/>
+    <property name="basket_onion_sprite" value="basket_onion.png"/>
+    <property name="basket_potato_sprite" value="basket_potato.png"/>
+    <property name="basket_tomato_sprite" value="basket_tomato.png"/>
+    <property name="contents" value="empty"/>
+    <property name="type" value="basket"/>
+   </properties>
+  </object>
+  <object id="21" name="Table" x="480" y="600" width="120" height="360"/>
+  <object id="28" name="Submission Zone" x="240" y="240" width="240" height="240"/>
+ </objectgroup>
+</map>
